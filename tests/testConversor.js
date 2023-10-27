@@ -2,7 +2,7 @@ import { Selector } from 'testcafe';
 
 fixture`Calculadora de divisas`.page`https://practicacondevops.vercel.app/`;
 
-test('Prueba 7: Conversión correcta', async (t) => {
+test('Prueba 1: Conversión correcta', async (t) => {
   // Ingresar un valor en el campo de entrada
   await t.typeText('input[type="number"]', '75');
 

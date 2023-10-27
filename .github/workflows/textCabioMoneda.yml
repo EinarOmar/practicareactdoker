@@ -1,4 +1,4 @@
-name: TestCafe Validacion de conversor
+name: TestCafe Validacion de cambio de moneda de 0
 
 on: [push]
 
@@ -22,7 +22,7 @@ jobs:
       run: npm install
 
     - name: Run TestCafe tests
-      run: testcafe chromium:headless ./tests/testConversor.js
+      run: testcafe chromium:headless ./tests/testCabioMoneda.js
 
 
 
