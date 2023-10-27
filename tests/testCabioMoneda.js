@@ -15,6 +15,9 @@ test('Prueba 2: Cambio de moneda y reinicio del resultado', async (t) => {
     // Hacer clic en el botón de conversión
     await t.click('button');
   
+    // Espera a que el elemento con data-test="result" aparezca en el DOM
+    await t.expect(Selector('[data-test="result"]').exists).ok();
+
     // Verificar que el resultado sea mayor que 0
     await t.expect(Selector('[data-test="result"]').innerText).gte(0);
   
@@ -23,6 +26,9 @@ test('Prueba 2: Cambio de moneda y reinicio del resultado', async (t) => {
       .click('select')
       .click(Selector('option').withText('USD (Dólares)'));
   
+    // Espera a que el elemento con data-test="result" aparezca en el DOM
+    await t.expect(Selector('[data-test="result"]').exists).ok();
+
     // Verificar que el resultado se haya reiniciado a 0
     await t.expect(Selector('[data-test="result"]').innerText).eql('0 USD');
 });
