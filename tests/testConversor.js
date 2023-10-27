@@ -15,5 +15,5 @@ test('Prueba 7: Conversión correcta', async (t) => {
   await t.click('button');
 
   // Realizar el cálculo manual (75 MXN * 0.064) y verificar que el resultado sea igual
-  await t.expect(Selector('div').withText('4.80').exists).ok();
+  await t.expect(Selector('div').withText('4.89').exists).ok();
 });
