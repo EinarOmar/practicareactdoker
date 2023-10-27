@@ -1,3 +1,8 @@
+import { Selector } from 'testcafe';
+
+fixture`Calculadora de divisas`
+  .page`https://practicacondevops.vercel.app/`;
+
 test('Prueba 2: Cambio de moneda y reinicio del resultado', async (t) => {
     // Ingresar un valor en el campo de entrada
     await t.typeText('input[type="number"]', '50');
