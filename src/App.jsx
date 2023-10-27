@@ -23,7 +23,10 @@
       CHF: 0.045, // 1 MXN = 0.045 CHF
     };
     const convertCurrency = () => {
-      if (exchangeRates[selectedCurrency]) {
+      if (inputValue.trim() === "" || inputValue === "0") {
+        // Si el valor de inputValue está vacío o igual a 0, muestra un mensaje de error
+        alert("Por favor, introduce una cantidad en MXN mayor que 0 antes de convertir.");
+      } else if (exchangeRates[selectedCurrency]) {
         const rate = exchangeRates[selectedCurrency];
         const amountInMXN = parseFloat(inputValue);
         const result = amountInMXN * rate;
