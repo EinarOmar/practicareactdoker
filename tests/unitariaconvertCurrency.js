@@ -12,7 +12,7 @@ test("Prueba Unitaria 2: Verificar que la función de conversión funcione corre
   };
 
   // Prueba la conversión con un valor válido
-  expect(convertCurrency(100, "USD", exchangeRates)).toBe(4.90);
+  expect(convertCurrency(100, "USD", exchangeRates)).toBe(4.1);
 
   // Prueba la conversión con un valor no válido
   expect(convertCurrency(0, "EUR", exchangeRates)).toBe(0);

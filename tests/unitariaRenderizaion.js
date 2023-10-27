@@ -6,7 +6,7 @@ test("Prueba Unitaria 1: Verificar que el componente se renderice correctamente"
   render(<App />);
   
   // Verificar que el título esté presente en la página
-  expect(screen.getByText("Claculadora de divisas")).toBeInTheDocument();
+  expect(screen.getByText("Claculadora de divisassss")).toBeInTheDocument();
 
   // Verificar que el campo de entrada esté presente
   expect(screen.getByPlaceholderText("Introduce tu dinero MXN")).toBeInTheDocument();
